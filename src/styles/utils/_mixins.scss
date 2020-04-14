@@ -1,0 +1,16 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-content-center {
+  display: flex;
+  justify-content: center;
+}
