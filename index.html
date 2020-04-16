@@ -5,11 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href = "fonts/gilroy/stylesheet.css" rel = "stylesheet" type = "text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <h1>Hello</h1>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+      <div class="burger-menu">
+        <img src="images/burger.svg" class="show-burger" alt="burger menu">
+        <img src="images/close.svg" class="close-burger hide-burger" alt="burger menu">
+      </div>
+
+      <div class="menu-box">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Home
+              </a>
+
+              <div class="sub-menu">
+                <div class="sub-menu__wrap">
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item sub-menu__title">
+                      Submenu 01
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Excepteur sint
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Occaecat cupidatat
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item sub-menu__title">
+                      Submenu 02
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Adipisci velit
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Magnam aliquam
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Error sit voluptatem
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                About us
+              </a>
+
+              <div class="sub-menu">
+                <div class="sub-menu__wrap">
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item sub-menu__title">
+                      Submenu 05
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Excepteur sint
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Occaecat cupidatat
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item sub-menu__title">
+                      Submenu 05
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Adipisci velit
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Magnam aliquam
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Our News
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Blog
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Contact
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Faq
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="entry">
+          <a href="#" class="entry__mobile-title">Log In</a>
+          <a href="#" class="entry__btn">Sign in</a>
+          <a href="#" class="entry__btn">Registration</a>
+        </div>
+
+        <div class="select-box">
+          <select class="select-leng">
+            <option class="lang-en">English</option>
+            <option class="lang-de">Dutch</option>
+            <option class="lang-fr">French</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slider-box">
+        <div class="slider wrapper">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__container">
+                  <div class="slider__content">
+                    <h1 class="slider__title">
+                      Sed ut perspiciatis unde omnis iste natus error 5000
+                    </h1>
+
+                    <a href="#" class="btn slider__btn">Learn Now!</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider__container">
+                  <div class="slider__content">
+                    <h1 class="slider__title">
+                      Sed ut perspiciatis unde omnis iste natus...
+                    </h1>
+
+                    <a href="#" class="btn slider__btn">Learn Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="slider__img-box">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <img src="images/slider/img.png" alt="image" class="slider__img">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/slider/img.png" alt="image" class="slider__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="partners">
+          <div class="partners__container wrapper">
+            <img src="images/poster/visa.png" alt="image-visa" class="partners__img">
+            <img src="images/poster/neteller.png" alt="image-neteller" class="partners__img">
+            <img src="images/poster/pm.png" alt="image-perfect" class="partners__img">
+            <img src="images/poster/sticpay.png" alt="image-sticpay" class="partners__img">
+            <img src="images/poster/fasa.png" alt="image-fasa" class="partners__img">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="scripts/lib/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/jquery-migrate-1.4.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/lib/jquery.formstyler.js" ></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
