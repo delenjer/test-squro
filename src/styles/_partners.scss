@@ -1,0 +1,16 @@
+.partners {
+  background-color: #ffe400;
+  padding: 22px 0;
+
+  &__container {
+    @include flex-space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    &__img {
+      width: 15%;
+      height: auto;
+    }
+  }
+}

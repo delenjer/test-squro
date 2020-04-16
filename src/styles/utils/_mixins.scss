@@ -1,1 +1,10 @@
-//@
+@mixin main-fonts {
+  font-family: $main-fonts;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}

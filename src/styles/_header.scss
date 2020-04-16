@@ -1,0 +1,26 @@
+.header {
+  background-color: $black-theme;
+  padding: 0 35px;
+  @include flex-space-between;
+  align-items: center;
+  border-bottom: 1px solid #414144;
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1161px) {
+    a {
+      font-size: 12px;
+    }
+    padding: 0 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    a {
+      font-size: 16px;
+    }
+  }
+}

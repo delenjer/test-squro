@@ -1,6 +1,101 @@
 @import "utils";
+@import "header";
+@import "nav";
+@import "entry";
+@import "select";
+@import "slider";
+@import "partners";
+@import "../scripts/lib/jquery.formstyler";
 
 * {
   box-sizing: border-box;
   outline: none;
+}
+
+body {
+  @include main-fonts;
+  background-color: $black-theme;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 960px;
+  margin: auto;
+  padding: 0 10px;
+
+  @media (max-width: 961px) {
+    width: 768px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.logo {
+  display: block;
+  margin-right: 50px;
+
+  @media (max-width: 1161px) {
+    img {
+      width: 60px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+}
+
+.menu-box {
+  @include flex-space-between;
+  align-items: center;
+  flex-basis: 75%;
+
+  @media (max-width: 1161px) {
+    flex-basis: 90%;
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: -120%;
+    right: 0;
+    padding: 20px 10px;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10;
+    overflow-y: scroll;
+  }
+}
+
+.menu-box-visible {
+  top: 44px;
+}
+
+.burger-menu {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.hide-burger {
+  display: none;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffd200;
+  color: #000;
+  border-radius: 2px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }

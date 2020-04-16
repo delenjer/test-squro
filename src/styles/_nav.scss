@@ -1,0 +1,149 @@
+.nav {
+  position: relative;
+  z-index: $z-index-nav;
+  margin-right: 10px;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 29px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: $menu-link-color;
+    padding: 42px 0;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    order: 3;
+    width: 100%;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+
+    &__link {
+      position: relative;
+      padding: 10px 10px 10px 20px;
+      display: block;
+      border-bottom: 1px solid #202020;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #202020;
+      }
+    }
+  }
+}
+
+.active-link {
+  position: relative;
+  color: $hover-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffd200;
+    transition: 0.3s;
+
+    @media (max-width: 768px) {
+      height: 1px;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 102%;
+  width: 100%;
+  background-color: #000;
+  border-bottom: 3px solid #ffd200;
+  padding: 20px 29px;
+  //opacity: 0;
+  //z-index: -100;
+  display: none;
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__title {
+    color: #888;
+    margin-bottom: 34px;
+  }
+
+  &__list {
+    width: 100%;
+    margin-right: 23px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #fff;
+    transition: color 0.3s;
+    border-bottom: 1px solid #202020;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  @media (max-width: 1161px) {
+    position: relative;
+    top: 1px;
+    border: none;
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__wrap {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-right: 0;
+    }
+
+    &__link {
+      border: none;
+      position: relative;
+    }
+  }
+}
