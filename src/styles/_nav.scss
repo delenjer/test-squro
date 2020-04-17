@@ -121,9 +121,6 @@
   }
 
   @media (max-width: 1161px) {
-    position: relative;
-    top: 1px;
-    border: none;
 
     &__title {
       font-size: 14px;
@@ -131,6 +128,10 @@
   }
 
   @media (max-width: 768px) {
+    position: relative;
+    top: 1px;
+    border: none;
+
     &__wrap {
       flex-direction: column;
     }
